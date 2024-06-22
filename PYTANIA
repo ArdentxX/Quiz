@@ -1,0 +1,32 @@
+[
+    {
+        "pytanie": "Ile lat ma AGH?",
+        "odpowiedzi": ["111", "112", "110", "220"],
+        "dobra odpowiedz": ["111"]
+    },
+    {
+        "pytanie": "Na jakim budynku znajduje się napis TELEINFORMATYKA?",
+        "odpowiedzi": ["B9", "B8", "D14", "C7"],
+        "dobra odpowiedz": ["B9"]
+    },
+    {
+        "pytanie": "W którym roku założono AGH?",
+        "odpowiedzi": ["1914", "2013", "1931", "1913"],
+        "dobra odpowiedz": ["1913"]
+    },
+    {
+        "pytanie": "Jakie budynki należą do wydziału WIET?",
+        "odpowiedzi": ["D7", "B9", "D5", "D6"],
+        "dobra odpowiedz": ["B9", "D5", "D6"]
+    },
+    {
+        "pytanie": "Które z poniższych kierunków są oferowane na AGH?",
+        "odpowiedzi": ["Informatyka", "Geologia", "Budownictwo", "Inżynieria Biomedyczna"],
+        "dobra odpowiedz": ["Informatyka", "Geologia", "Inżynieria Biomedyczna"]
+    },
+    {
+        "pytanie": "W których budynkach odbywają się zajęcia Wydziału Geologii, Geofizyki i Ochrony Środowiska?",
+        "odpowiedzi": ["A1", "A2", "A3", "A4"],
+        "dobra odpowiedz": ["A1", "A2"]
+    }
+]
