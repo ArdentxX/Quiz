@@ -1,7 +1,7 @@
 import json
 import random
 
-file = open("bazaPytan.json")
+file = open("PYTANIA")
 file2 = json.load(file)
 
 
@@ -12,7 +12,7 @@ def quiz(bazapytan):
     print(pytanie["pytanie"])
     for j,i in enumerate(pytanie['odpowiedzi']):
         print(f"{j+1}. {i}")
-    odp = str(input("podaj odpowiedź (odpowiedzi oddziel przecinkami): "))
+    odp = str(input("podaj odpowiedź (odpowiedzi oddziel przecinkami, odpowiedzi nie numerki): "))
     odp_set = set(odp.split(","))
     correct_set = set(pytanie['dobra odpowiedz'])
     if correct_set == odp_set:
