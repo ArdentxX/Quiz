@@ -1,0 +1,29 @@
+import json
+import random
+
+file = open("bazaPytan.json")
+file2 = json.load(file)
+
+
+
+def quiz(bazapytan):
+
+    pytanie = random.choice(file2)
+    print(pytanie["pytanie"])
+    for j,i in enumerate(pytanie['odpowiedzi']):
+        print(f"{j+1}. {i}")
+    odp = str(input("podaj odpowiedź (odpowiedzi oddziel przecinkami): "))
+    odp_set = set(odp.split(","))
+    correct_set = set(pytanie['dobra odpowiedz'])
+    if correct_set == odp_set:
+        print("prawidłowa odpowiedz")
+        return True
+    else:
+        print("zła odpowiedz")
+        return False
+    
+pkt = 0
+for i in range(3):
+    if(quiz(file2)):
+        pkt += 1
+    print(f'Aktualne punkty: {pkt}/{i+1}')
